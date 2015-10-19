@@ -1,0 +1,17 @@
+body {
+    background-color: #eeeeee;
+    font-family: sans-serif, Helvetica;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.header {
+    text-align: center;
+}
+.info {
+    background-color: #ffffff;
+    width: 515px;
+    height: 750px;
+    margin: 4px auto 45px;
+    padding: 50px;
+    box-shadow: 0px 0px 4px -1px;
+}

@@ -1,0 +1,76 @@
+body {
+  background: url("../img/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: Tahoma, Arial;
+  color: #e6e6e6;
+}
+
+.wrapper {
+  width: 960px;
+  height: 880px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 200px;
+  width: 960px;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo {
+  float: left;
+  padding-left: 60px;
+  padding-top: 55px;
+  width: 50px;
+}
+
+.logo-text {
+  float: left;
+  margin-top: 175px;
+  margin-left: 25px;
+  font-size: 9pt;
+}
+
+.contacts {
+  float: right;
+  margin-top: 155px;
+  margin-right: 55px;
+  width: 14%;
+  font-size: 10pt;
+}
+
+.tel {
+  font-size: 8pt;
+}
+
+.line1 {
+  margin-left: 45px;
+  position: relative;
+  overflow: hidden;
+}
+
+.line2 {
+  margin-top: 60px;
+  margin-left: 45px;
+  position: relative;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.menu p {
+  margin: 0;
+  font-size: 15pt;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 160px;
+  text-align: center;
+  font-size: 10pt;
+}

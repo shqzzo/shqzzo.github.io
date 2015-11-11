@@ -1,0 +1,23 @@
+table {
+  height: 540px;
+  width: 500px;
+}
+
+td {
+  border: 10px solid;
+}
+
+.black {
+  background: #08130e;
+}
+
+.blue {
+  background: #094885;
+}
+
+.red {
+  background: #ff5638;
+}
+.yellow {
+  background: #ffe659;
+}

@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background: url("../img/bg.jpg") no-repeat center center fixed;
+  background-size: 1215px 1065px;
+  background-color: #000;
+  font-family: "Helvetica Neue";
+  font-size: 11pt;
+}
+
+header {
+  width: 1215px;
+  margin: 0 auto;
+  height: 35px;
+  background: #085596;
+}
+
+a {
+  text-decoration: none;
+}
+
+.right-menu p {
+  display: block;
+  float: right;
+  background: linear-gradient(to bottom, rgba(79,175,219,1) 0%, rgba(46,121,196,1) 100%);
+  line-height: 33px;
+  padding: 0 10px;
+  margin: 0 15px;
+  color: #fff;
+  border: 1px solid #5da5e0;
+}
+
+.right-menu a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.left-menu li {
+  padding: 0 10px;
+  display: block;
+  float: right;
+  line-height: 35px;
+}
+
+.left-menu li:hover {
+  background: #4eabda;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.left-menu li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.left-menu li a {
+  display: block;
+  color: #60b5ed;
+}
+
+.flag li {
+  line-height: 35px;
+  display: block;
+  float: right;
+  padding: 0 10px;
+}
+
+.flag li img {
+  margin-top: 6px;
+  padding-left: 19px;
+  border-left: 1px solid #60b5ed;
+}
+
+.flag li a {
+color: #fff;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -290px 0 0 -280px;
+}
+
+input {
+  font-family: "Helvetica Neue";
+}
+
+.headform {
+  width: 560px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.6);
+  margin-bottom:2px;
+}
+
+.headform p {
+  padding-top: 20px;
+}
+
+.form {
+    position: absolute;
+    width: 560px;
+    height: 550px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.form img {
+  margin-top: 25px;
+}
+
+.line {
+  margin-bottom: 25px;
+}
+
+.text {
+  border:none;
+  border-bottom: 1px solid rgba(144, 133, 133, 0.6);
+  padding: 10px 20px;
+  margin-bottom: 15px;
+	width: 235px;
+	font-size: 12pt;
+	background: #100f0f;
+}
+
+.text:focus,
+.text:active {
+  background: #1b5288;
+  color: #fff;
+}
+
+p {
+  color: #ccc;
+  text-align: center;
+}
+
+label {
+  font-size: 12pt;
+}
+
+.button {
+  width: 150px;
+  height: 35px;
+  margin: 20px 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 12pt;
+  border-radius: 4px;
+  border: 1px solid rgb(103, 198, 230);
+  background: linear-gradient(to bottom, rgba(80,175,219,1) 0%, rgba(54,133,202,1) 100%);
+  box-shadow: inset 0px 1px 4px 1px rgba(103,198,230,1);
+}

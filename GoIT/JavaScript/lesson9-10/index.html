@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jCarousel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/g/jcarousel@0.3.4(jquery.jcarousel.min.js+jquery.jcarousel-autoscroll.min.js+jquery.jcarousel-control.min.js+jquery.jcarousel-core.min.js+jquery.jcarousel-pagination.min.js)"></script>
+    <script src="js/jquery.customSelect.js"></script>
+    <script src="js/jquery.checkbox.js"></script>
+    <script src="js/jquery.color.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!--Navigation-->
+    <div class="navigation clearfix">
+        <ul class="menu clearfix">
+            <li><a href="#">Nav 1</a></li>
+            <li><a href="#">Nav 2</a></li>
+            <li class="dropdown"><a href="#">Nav 3</a>
+                <ul class="submenu1">
+                    <li><a href="#">Nav 3.1</a></li>
+                    <li><a href="#">Nav 3.2</a></li>
+                    <li><a href="#">Nav 3.3</a></li>
+                    <li class="dropright"><a href="#">Nav 3.4</a>
+                        <ul class="submenu2">
+                            <li><a href="#">Nav 3.4.1</a></li>
+                            <li><a href="#">Nav 3.4.2</a></li>
+                            <li><a href="#">Nav 3.4.3</a></li>
+                            <li><a href="#">Nav 3.4.4</a></li>
+                            <li><a href="#">Nav 3.4.5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Nav 3.5</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Nav 4</a></li>
+            <li><a href="#">Nav 5</a></li>
+        </ul>
+    </div>
+    <!--jCarousel-->
+    <div class="wrapper_jcarousel">
+        <div class="jcarousel">
+            <ul>
+                <li><img src="img/1.jpg"></li>
+                <li><img src="img/2.jpg"></li>
+                <li><img src="img/3.jpg"></li>
+                <li><img src="img/4.jpg"></li>
+                <li><img src="img/5.jpg"></li>
+                <li><img src="img/6.jpg"></li>
+            </ul>
+        </div>
+        <!--Controls-->
+        <a class="jcarousel-prev" href="#">‹</a>
+        <a class="jcarousel-next" href="#">›</a>
+        <!--Pagination-->
+        <div class="jcarousel-pagination">
+        </div>
+    </div>
+    <!--jQuery Custom Select Box-->
+    <div class="select">
+        <select class="customSelect">
+            <option>Option1</option>
+            <option>Option2</option>
+            <option>Option3</option>
+        </select>
+    </div>
+    <!--CheckBox JS-->
+    <div class="checkbox_js">
+        <label for="ch1">CheckBox JS 1</label>
+        <span class="niceCheck"><input type="checkbox" id="ch1"></span>
+        <label for="ch2">CheckBox JS 2</label>
+        <span class="niceCheck"><input type="checkbox" checked="checked" id="ch2"></span>
+    </div>
+    <div class="checkbox_css">
+        <input class="cb_css" type="checkbox" id="test-check1">
+        <label class="cb_label" for="test-check1">CheckBox CSS 1</label>
+        <input class="cb_css" type="checkbox" id="test-check2">
+        <label class="cb_label" for="test-check2">CheckBox CSS 2</label>
+
+    </div>
+</body>
+</html>

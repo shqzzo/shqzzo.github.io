@@ -1,0 +1,252 @@
+body {
+    background-color: #465881;
+}
+
+/*Navigation*/
+.navigation {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+
+.menu {
+    background-color: #00909e;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    list-style: none;
+}
+
+.menu li a {
+    padding: 15px 35px;
+    line-height: 60px;
+    color: #181616;
+    font-family: monospace;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #36446b;
+}
+
+.submenu1 li {
+    width: 180px;
+    margin: 0 10px;
+    padding: 5px;
+    border-bottom: solid 1px #36446b;
+
+}
+
+.submenu1 li a {
+    padding: 15px 5px;
+    text-align: left;
+    line-height: 40px;
+}
+
+.submenu1 {
+    position: absolute;
+    left: 23px;
+    top: 50px;
+    display:none;
+    background-color: #00909e;
+}
+
+.submenu2 {
+    position: absolute;
+    left: 190px;
+    top: 0;
+    display:none;
+    background-color: #00909e;
+}
+
+.dropdown:after {
+    position: absolute;
+    right: 19px;
+    top: 50%;
+    height: 8px;
+    width: 15px;
+    margin-top: -2px;
+    background: url('../img/down.png') no-repeat center right;
+    content: '';
+}
+
+.dropright:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 7px;
+    width: 10px;
+    margin-top: -2px;
+    background: url('../img/right.png') no-repeat center right;
+    content: '';
+}
+
+/*jCarousel*/
+.wrapper_jcarousel {
+    position: relative;
+    height: 480px;
+    width: 640px;
+    margin: 10px auto;
+    border: 10px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    box-shadow: rgba(74, 125, 102,.3) 2px 2px 10px;
+}
+
+.jcarousel-prev,
+.jcarousel-next {
+    position: absolute;
+    top: 240px;
+    height: 30px;
+    width: 30px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font: 24px/27px Arial;
+    color: #465881;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, .3) 0 0 4px inset;
+    background-color: #90A6C4;
+}
+
+.jcarousel-prev{
+    left: -50px;
+    margin-left: -5px;
+}
+
+.jcarousel-next{
+    right: -50px;
+}
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: transparent;
+}
+
+.jlink {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: #90A6C4;
+}
+
+.active {
+    background-color: #A895B9;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    position: relative;
+    width: 20000em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+/*jQuery Custom Select Box*/
+.select {
+    position: absolute;
+    left: 44%;
+}
+
+.customSelect {
+    width: 150px;
+    padding: 5px 10px;
+    border: 1px solid #4AA89F;
+    border-radius: 2px 2px;
+    font: 14px sans-serif;
+    color: #555;
+    background:rgba(129, 197, 184, 0.59) url(http://i48.tinypic.com/2u7rpec.png) right center no-repeat;
+}
+
+.customSelect.customSelectHover {
+    background-color:#4AA89F;
+}
+
+.customSelect.customSelectFocus {
+    border-color:#76BFB8;
+}
+
+
+/*CheckBox JS*/
+.checkbox_js {
+    width: 120px;
+    float: right;
+}
+
+.niceCheck {
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/checkbox-sprite.png);
+}
+
+.niceCheck input {
+    display: none;
+}
+
+/*CheckBox CSS*/
+.checkbox_css {
+    width: 140px;
+    margin-top: 10px;
+}
+
+.cb_css {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.cb_label {
+    cursor: pointer;
+}
+
+.cb_label:after {
+    position: relative;
+    top: 3px;
+    height: 17px;
+    width: 17px;
+    margin-left: 4px;
+    display: inline-block;
+    background: url(../img/checkbox-2.png);
+    content: " ";
+}
+
+.cb_css:checked + .cb_label:after {
+    background-position: 0 -17px;
+}
+
+.cb_label:hover:after {
+    background-position: 0 -34px;
+}
+
+.cb_css:checked + .cb_label:hover:after {
+    background-position: 0 -51px;
+}
+
+
+/*ClearFix*/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}

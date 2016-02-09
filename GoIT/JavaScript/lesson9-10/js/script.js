@@ -47,7 +47,7 @@ $(function() {
 
     // jCarousel Pagination
     $('.jcarousel-pagination').jcarouselPagination({
-        item: function(page) {
+        'item': function(page) {
             if(page == 1)
                 return '<a class="jlink" href="#' + page + '" class="active"></a>';
             else

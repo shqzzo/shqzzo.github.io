@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 11-12_2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <script type="text/html" id="info-tmpl">
+        <div class="info">
+            <div class="header">
+                <h2><%=name%></h2>
+                <img src=<%=photo%> alt="myPhoto" title="myPhoto">
+                <p><%=job%></p>
+            </div>
+            <div class="hr">
+                <p><%=why%></p>
+                <ul>
+                    <% for ( var i = 0; i < list.length; i++ ) { %>
+                    <li><%=list[i]%></li>
+                    <% } %>
+                </ul>
+            </div>
+            <div class="hr">
+                <p><%=contactNum%></p>
+                <%=phoneNumber%>
+                <p><%=contactFb%></p>
+                <a href=<%=fb%>><%=link%></a>
+            </div>
+            <p><%=feedback%></p>
+            <%=myFeedback%>
+        </div>
+    </script>
+</body>
+</html>

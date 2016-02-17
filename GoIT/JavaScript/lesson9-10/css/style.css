@@ -1,5 +1,5 @@
 body {
-    background-color: #465881;
+    background-color: #C9D8FB;
 }
 
 /*Navigation*/
@@ -10,7 +10,7 @@ body {
 }
 
 .menu {
-    background-color: #00909e;
+    background-color: #56BFC9;
 }
 
 .menu li {
@@ -51,7 +51,7 @@ body {
     left: 23px;
     top: 50px;
     display:none;
-    background-color: #00909e;
+    background-color: #56BFC9;
 }
 
 .submenu2 {
@@ -59,7 +59,7 @@ body {
     left: 190px;
     top: 0;
     display:none;
-    background-color: #00909e;
+    background-color: #56BFC9;
 }
 
 .dropdown:after {

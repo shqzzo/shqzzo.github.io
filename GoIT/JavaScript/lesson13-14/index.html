@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <script type="text/html" id="test-tmpl">
+        <% for (var i = 0; i < data.length; i++) { %>
+        <div class="box<%=i%>">
+            <h3 class="label label-primary"><%=data[i].question%></h3>
+            <% for (var j = 0; j < data[i].answers.length; j++) { %>
+            <div class="checkbox col-lg-12">
+                <label><input type="checkbox"><%=data[i].answers[j]%></label>
+            </div>
+            <%}; %>
+        </div>
+        <%}; %>
+    </script>
+
+    <div class="container wrapper">
+        <div class="test">
+        <!--Template-->
+        </div>
+        <div class="window_wrapper">
+            <div class="window_results">
+                <h2 class="alert alert-info">Результаты теста:</h2>
+            </div>
+        </div>
+        <input class="btn btn-default btn-success center-block" type="submit" value="Проверить результаты">
+    </div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 .DS_Store
+.idea/
 **/build
 **/libs
 **/node_modules/
 **/tmp/
-

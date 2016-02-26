@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 15-16</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <img class="logo" src="https://www.google.com.ua/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google.com">
+        <input class="query_form" type="text"/>
+        <input class="search_btn" type="submit" value="Пошук Google" />
+        <div class ="results">
+            <!--Template-->
+        </div>
+    </div>
+
+    <script type="text/html" id="resultsGoogle">
+        <% for (var i = 0; i < results.length; i++) { %>
+        <div class="box">
+            <h4><a href="<%=results[i].url%>" title="<%=results[i].url%>" target="_blank">
+                <%=results[i].title%></a></h4>
+            <a href="<%=results[i].url%>" title="<%=results[i].url%>" target="_blank" style = "color: #006621">
+                <%=results[i].visibleUrl%></a>
+            <p><%=results[i].content%></p>
+        </div>
+        <%}; %>
+    </script>
+</body>
+</html>

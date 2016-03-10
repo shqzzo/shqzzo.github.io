@@ -157,6 +157,11 @@ nav a {
 }
 
 /*Search*/
+select {
+  box-shadow: inset .5px .9px 1px rgba(0, 0, 0, .75);
+  border-bottom: none;
+  background: url("../img/select_arrow.png") center right no-repeat;
+}
 
 .search {
   float: left;
@@ -561,7 +566,7 @@ nav a {
 }
 
 .check-brand input {
-  margin-right: 12px;
+  margin-right: 10px;
   margin-bottom: 10px;
 }
 
@@ -597,7 +602,7 @@ nav a {
 }
 
 .check-brand2 input {
-  margin-right: 12px;
+  margin-right: 10px;
   margin-bottom: 10px;
 }
 

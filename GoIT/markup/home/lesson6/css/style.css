@@ -158,6 +158,9 @@ nav a {
 
 /*Search*/
 select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   box-shadow: inset .5px .9px 1px rgba(0, 0, 0, .75);
   border-bottom: none;
   background: url("../img/select_arrow.png") center right no-repeat;
@@ -273,6 +276,14 @@ select {
   margin-left: 13px;
   margin-top: 16px;
   font-weight: bold;
+}
+
+.search2 .wheels-size {
+  width: 50px;
+}
+
+.search2 .r-size {
+  width: 43px;
 }
 
 .search2 .r {

@@ -1,5 +1,5 @@
 define(
-    'View',
+    'view',
     [],
     function () {
         function View(model) {

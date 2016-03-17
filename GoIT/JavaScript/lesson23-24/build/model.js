@@ -1,5 +1,5 @@
 define(
-    'Model',
+    'model',
     [],
     function () {
 

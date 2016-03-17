@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 23-24</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script data-main="build/app" src="build/require.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="icon">
+        <svg xmlns="//www.w3.org/2000/svg" viewBox="0 0 48 48">
+            <path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"></path>
+        </svg>
+    </div>
+
+    <div class="card">
+        <form>
+            <div class="card__group">
+                <input type="text" class="item-value" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>New Task</label>
+            </div>
+        </form>
+        <button class="card__btn item-add">Add</button>
+    </div>
+
+    <script type="text/template" id="wrapper-template">
+
+        <div class="numberlist">
+            <ol class="item-list">
+
+            </ol>
+        </div>
+    </script>
+
+    <script type="text/template" id="list-template">
+        <% for (var i = 0; i < data.length; i++) { %>
+        <li><%= data[i] %> <span data-value="<%= data[i] %>" class="icon-cancel item-delete"></span>
+            <span data-value="<%= data[i] %>" class="item-edit icon-pencil"></span></li>
+        <% }; %>
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,323 @@
+body {
+    background: #B4E0E1;
+}
+
+/*Fontello*/
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?79368792');
+    src: url('../font/fontello.eot?79368792#iefix') format('embedded-opentype'),
+    url('../font/fontello.woff2?79368792') format('woff2'),
+    url('../font/fontello.woff?79368792') format('woff'),
+    url('../font/fontello.ttf?79368792') format('truetype'),
+    url('../font/fontello.svg?79368792#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    opacity: .8;
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/*.icon-cancel:before { content: '\e800'; } !* '' *!*/
+.icon-cancel:before {
+    content: '\e800';
+    float: right;
+    color: red;
+    margin-top: 2px;
+    opacity: 0;
+}
+
+.icon-pencil:before {
+    content: '\e801';
+    float: right;
+    color: grey;
+    margin-top: 2px;
+    opacity: 0;
+}
+
+.icon-cancel:hover, .icon-pencil:hover {
+    cursor: pointer;
+}
+
+li:hover .icon-cancel:before, li:hover .icon-pencil:before {
+    opacity: 1;
+    transition: .5s;
+}
+
+/*Add Task*/
+
+.icon {
+    position: relative;
+    border-radius: 90%;
+    box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+    height: 24px;
+    width: 24px;
+    margin: 30px auto -18px;
+    padding: 6px;
+    -webkit-transition: 0.2s all cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 0.2s all cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+    text-align: center;
+    background: #224687;
+    color: white;
+}
+
+.icon svg {
+    height: 24px;
+    vertical-align: text-bottom;
+    width: 24px;
+    fill: white;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.card {
+    border-radius: 2px;
+    box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+    height: auto;
+    max-width: 400px;
+    margin: 0 auto;
+    -webkit-transform: scale(0) translateZ(0);
+    transform: scale(0) translateZ(0);
+    -webkit-transition: 0.2s all cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 0.2s all cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    z-index: 1;
+    background: white;
+    opacity: 0;
+}
+
+.icon.active {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.card.active {
+    height: auto;
+    padding: 50px;
+    -webkit-transform: scale(1) translateZ(0);
+    transform: scale(1) translateZ(0);
+    opacity: 1;
+}
+
+/*Button*/
+
+.card__btn {
+    width: 125px;
+    height: 35px;
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 0;
+    overflow: hidden;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background-color: #2ecc71;
+    color: #ecf0f1;
+    transition: background-color .3s;
+}
+
+.card__btn:hover, .card__btn:focus {
+    background-color: #27ae60;
+}
+
+.card__btn span {
+    display: block;
+    padding: 12px 24px;
+}
+
+.card__btn:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0;
+    padding-top: 0;
+    border-radius: 100%;
+    background-color: rgba(236, 240, 241, .3);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.card__btn:active:before {
+    width: 120%;
+    padding-top: 120%;
+    transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+/*Form*/
+
+.card__group {
+    position: relative;
+    margin-bottom: 65px;
+}
+
+input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* LABEL */
+
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+}
+
+/* Active state */
+
+input:focus ~ label, input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+
+.bar {
+    position: relative;
+    display: block;
+    width: 315px;
+}
+
+.bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+/* active state */
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+
+}
+
+/*List*/
+
+.numberlist {
+
+    width: 410px;
+    margin: 0 auto;
+
+}
+
+.numberlist ol {
+    counter-reset: li;
+    list-style: none;
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+}
+
+.numberlist ol ol {
+    margin: 0 0 0 2em;
+}
+
+.numberlist li {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .9em 0;
+    background: #FFF;
+    color: #444;
+    text-decoration: none;
+    -moz-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    border-radius: .3em;
+    box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+}
+
+.numberlist li:hover {
+    background: #cbe7f8;
+}
+
+.numberlist li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+    color: #FFF;
+    box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+}
+

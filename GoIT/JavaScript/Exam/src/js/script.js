@@ -1,8 +1,8 @@
-(function($) {
+(function ($) {
 
     $.support.cors = true;
 
-    $(function() {
+    $(function () {
 
 
         $('.jcarousel').jcarousel({
@@ -17,10 +17,10 @@
             });
 
         $('.jcarousel-prev')
-            .on('jcarouselcontrol:active', function() {
+            .on('jcarouselcontrol:active', function () {
                 $(this).removeClass('inactive');
             })
-            .on('jcarouselcontrol:inactive', function() {
+            .on('jcarouselcontrol:inactive', function () {
                 $(this).addClass('inactive');
             })
             .jcarouselControl({
@@ -28,19 +28,15 @@
             });
 
         $('.jcarousel-next')
-            .on('jcarouselcontrol:active', function() {
+            .on('jcarouselcontrol:active', function () {
                 $(this).removeClass('inactive');
             })
-            .on('jcarouselcontrol:inactive', function() {
+            .on('jcarouselcontrol:inactive', function () {
                 $(this).addClass('inactive');
             })
             .jcarouselControl({
                 target: '+=1'
             });
-
-
-
-        var query = '';
 
         function renderImg(query) {
 
@@ -49,7 +45,7 @@
                 dataType: "json",
                 cache: false,
                 url: 'http://api.pixplorer.co.uk/image?word=' + query + '&amount=7&size=tb',
-                success: function(data) {
+                success: function (data) {
                     var img = tmpl($('#img-template').html(), data);
 
                     $('.grid').remove();
@@ -67,7 +63,7 @@
             });
         }
 
-        $('#search').submit(function(e) {
+        $('#search').submit(function (e) {
 
             e.preventDefault();
             var userQuery = encodeURIComponent($('.search__input').val());

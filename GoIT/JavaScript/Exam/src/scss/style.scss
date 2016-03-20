@@ -1,0 +1,705 @@
+@import "_normalize";
+
+//@font-face {
+//  font-family: 'Roboto';
+//  src: url('../fonts/Roboto-Light-webfont.eot');
+//  src: url('../fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+//  url('../fonts/Roboto-Light-webfont.woff') format('woff'),
+//  url('../fonts/Roboto-Light-webfont.ttf') format('truetype'),
+//  url('../fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* ClearFix */
+
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* Header */
+
+.header {
+  height: 700px;
+  margin-bottom: 93px;
+  background: url(../img/header.jpg) center no-repeat;
+  background-size: cover;
+  &-headline {
+    width: 500px;
+    margin: 7px auto;
+    text-align: center;
+    &__h1 {
+      height: 59px;
+      width: 500px;
+      display: inline-block;
+      color: white;
+      font: bold 52px/64px "Montserrat";
+      text-transform: uppercase;
+    }
+    &__h2 {
+      height: 36px;
+      width: 500px;
+      margin: 29px 0 31px 0;
+      display: inline-block;
+      font: 300 24px/36px "Roboto";
+      color: white;
+    }
+    &__btn {
+      height: 40px;
+      width: 225px;
+      display: inline-block;
+      border-radius: 20px;
+      background-color: #ff4e50;
+      color: white;
+      font: 14px/40px "Montserrat";
+      text-align: center;
+    }
+  }
+  &-top {
+    width: 940px;
+    height: 173px;
+    margin: 0 auto;
+    text-align: right;
+    &__logo {
+      height: 20px;
+      width: 177px;
+      margin-top: 45px;
+      float: left;
+      color: white;
+      font: bold 20px "Montserrat";
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    &__login {
+      height: 14px;
+      width: 53px;
+      margin: 48px 2px 0 0;
+      display: inline-block;
+      color: white;
+      font: bold 14px "Montserrat";
+      &--signup {
+        height: 36px;
+        width: 90px;
+        margin-left: 18px;
+        margin-top: 39px;
+        float: right;
+        line-height: 32px;
+        border: 2px solid white;
+        border-radius: 18px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* jCarousel */
+
+.sliders {
+  width: 940px;
+  margin: 34px auto 85px;
+}
+
+.headline {
+  margin: 0 0 14px 0;
+  color: #1a1915;
+  font: bold 22px "Montserrat";
+  text-align: center;
+}
+
+.jcarousel {
+  width: 300px;
+  height: 400px;
+  margin: 21px 20px 10px 0;
+  position: relative;
+  float: left;
+  border-radius: 4px;
+  overflow: hidden;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    float: left;
+  }
+}
+
+.jcarousel__wrapper {
+  height: 400px;
+  width: 300px;
+  margin: 0 5px 0 0;
+  padding: 0 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #fff;
+  background-position: center;
+}
+
+.step1 {
+  background-image: url(../img/step1.jpg);
+}
+
+.step2 {
+  background-image: url(../img/step2.jpg);
+}
+
+.step3 {
+  background-image: url(../img/step3.jpg);
+}
+
+.arrows__left,
+.arrows__right {
+  height: 55px;
+  width: 30px;
+  display: block;
+  position: absolute;
+  top: 153px;
+  cursor: pointer;
+}
+
+.arrows__left:hover,
+.arrows__right:hover {
+  opacity: 0.8;
+}
+
+.arrows__left:active,
+.arrows__right:active {
+  opacity: 1;
+}
+
+.arrows__left,
+.arrows__right {
+  background: url(../img/sprite.png);
+}
+
+.arrows__left {
+  background-position: 0 68px;
+  left: 20px;
+}
+
+.arrows__right {
+  background-position: 31px 68px;
+  right: 20px;
+}
+
+.info {
+  height: 386px;
+  display: table-cell;
+  vertical-align: bottom;
+  &__count {
+    height: 20px;
+    width: 70px;
+    margin: 0 0 14px 0;
+    padding: 0 14px;
+    display: block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #ff4e50;
+    font: 10px/21px "Montserrat";
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__title {
+    margin: 0;
+    font: bold 24px/31px "Montserrat";
+  }
+  &__desc {
+    margin: 10px 0 0 0;
+    display: block;
+    color: #acaaa8;
+    font: 300 14px/17px "Roboto";
+  }
+}
+
+/* Partners */
+
+.partners {
+  width: 940px;
+  margin: 0 auto 97px;
+  &-wrapper {
+    width: 940px;
+    overflow: hidden;
+  }
+  &-item {
+    width: 220px;
+    margin: 20px 20px 40px 0;
+    position: relative;
+    float: left;
+    text-align: center;
+    &:last-child {
+      margin-right: 0;
+    }
+    &__img {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: #1a1915;
+    }
+    &__bg-icon {
+      height: 40px;
+      width: 40px;
+      padding: 7px 7px 7px 8px;
+      position: absolute;
+      right: 46px;
+      top: 85px;
+      border: solid 4px #fff;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+    &__icon {
+      height: 16px;
+      width: 16px;
+      background: url(../img/sprite.png) no-repeat;
+    }
+    &__title {
+      margin: 14px 0 10px 0;
+      display: block;
+      color: #333;
+      font: bold 14px "Montserrat";
+    }
+    &__desc {
+      margin: 0;
+      display: inline-block;
+      font: 14px/17px 'Roboto';
+      letter-spacing: 0.1px;
+    }
+  }
+  &__btn {
+    height: 40px;
+    width: 192px;
+    margin: 0 auto;
+    border: 2px solid #ff4e50;
+    border-radius: 20px;
+    display: block;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #ff4e50;
+    font: bold 14px/36px "Montserrat";
+    text-align: center;
+  }
+}
+
+.red {
+  background-color: #ff4e50;
+}
+
+.green {
+  background-color: #1cd7ad;
+}
+
+.yellow {
+  background-color: #ffa507;
+}
+
+.blue {
+  background-color: #4e73db;
+}
+
+.tv {
+  background-position: 0 0;
+}
+
+.coffee {
+  background-position: 0 -17px;
+}
+
+.bong {
+  background-position: 1px -32px;
+}
+
+.plane {
+  background-position: -1px -49px;
+}
+
+/* Ideas */
+
+.ideas {
+  width: 940px;
+  margin: 0 auto 76px;
+}
+
+.grid {
+  margin-top: 33px;
+  &-item {
+    height: 310px;
+    width: 300px;
+    margin: 0 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    font: bold 22px "Montserrat";
+    text-align: center;
+    &--width2 {
+      width: 620px;
+    }
+    &__text {
+      height: inherit;
+      width: inherit;
+      padding: 0 15px;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
+
+/* Search */
+
+.search {
+  margin: 0 auto 90px;
+  text-align: center;
+  &__text {
+    margin: 33px 0 38px;
+    color: #333;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+  }
+  &__form {
+    display: inline-block;
+  }
+  &__input {
+    height: 40px;
+    width: 242px;
+    margin: 0 0 10px 0;
+    padding: 0 15px;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 1px #eee;
+    font: 14px "Roboto";
+  }
+  &__btn {
+    height: 40px;
+    width: 160px;
+    padding: 0;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff4e50;
+    color: #fff;
+    font: bold 14px "Montserrat";
+  }
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  border-top: 4px solid #ff4e50;
+  text-align: center;
+  &-wrapper {
+    width: 940px;
+    margin: 0 auto;
+  }
+  &-title {
+    margin: 36px 0 0 96px;
+    display: block;
+    float: left;
+    color: #333;
+    font: bold 14px "Montserrat";
+    &--partners {
+      margin-left: 88px;
+      margin-top: 36px;
+      display: block;
+      float: left;
+      color: #333;
+      font: bold 14px "Montserrat";
+    }
+  }
+  &-nav {
+    width: 80px;
+    margin-top: 64px;
+    margin-left: -74px;
+    padding: 0;
+    float: left;
+    &__item {
+      padding: 0px 7px;
+      float: left;
+    }
+    &__link {
+      color: #666;
+      font: 14px/24px "Roboto";
+    }
+  }
+  &__logo {
+    height: 50px;
+    margin: 36px auto 0;
+    display: block;
+    float: left;
+    color: #ff4e50;
+    font: bold 16px "Montserrat";
+    letter-spacing: 0.8px;
+  }
+  &-copy {
+    margin: 39px 0 18px 0;
+    float: right;
+    &__design {
+      margin-left: 29px;
+      display: block;
+      color: #ccc;
+      font: bold 10px "Montserrat";
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    &__img {
+      height: 24px;
+      width: 110px;
+      margin: 6px auto 0;
+      display: block;
+      background: url(../img/copy.png);
+    }
+  }
+}
+
+@media only screen and (max-width: 939px) {
+
+  .header-top {
+    width: 670px;
+  }
+
+  .sliders {
+    width: 746px;
+  }
+
+  .jcarousel {
+    width: 235px;
+    &__wrapper {
+      width: 240px;
+    }
+  }
+
+  .arrows__left,
+  .arrows__right {
+    top: 40px;
+  }
+
+  .partners {
+    width: 768px;
+    &-wrapper {
+      width: 500px;
+      margin: 0 auto 67px;
+    }
+    &-item {
+      margin: 20px 14px 3px 16px;
+    }
+  }
+
+  .ideas {
+    width: 748px;
+  }
+
+  .grid-item {
+    width: 236px;
+    &--width2 {
+      width: 492px;
+    }
+  }
+
+  .search {
+    margin: 0 auto 90px;
+    &__text {
+      margin: 30px 0 37px;
+    }
+    &__input {
+      width: 240px;
+      margin: 0 6px 10px 0;
+    }
+  }
+
+  .footer-wrapper {
+    width: 692px;
+  }
+
+  .footer-title {
+    margin: 36px 0 0 85px;
+    &--partners {
+      margin-left: 97px;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    height: 540px;
+    margin-bottom: 0;
+    &-top {
+      width: 300px;
+      margin-bottom: 28px;
+      text-align: center;
+      &__login {
+        margin: 20px 8px 115px 1px;
+        &--signup {
+          float: none;
+        }
+      }
+      &__logo {
+        float: none;
+      }
+    }
+    &-headline {
+      width: 300px;
+      margin: 7px auto;
+      text-align: center;
+
+      &__h1 {
+        width: 280px;
+        font: bold 30px "Montserrat";
+      }
+      &__h2 {
+        width: 217px;
+        margin: 0 0 25px;
+        font: 18px "Roboto";
+      }
+      &__btn {
+        width: 280px;
+      }
+    }
+  }
+
+  .sliders {
+    width: 300px;
+    margin: 34px auto 23px;
+  }
+
+  .jcarousel {
+    height: 240px;
+    width: 300px;
+    margin: 0 0 10px 0;
+    &__wrapper {
+      height: 240px;
+      width: 300px;
+    }
+  }
+
+  .arrows__left,
+  .arrows__right {
+    height: 240px;
+    width: 150px;
+    top: 0;
+    background-image: none;
+  }
+
+  .arrows__left {
+    left: 0;
+  }
+  .arrows__right {
+    right: 0;
+  }
+
+  .info {
+    height: 225px;
+  }
+
+  .partners {
+    width: 300px;
+    margin: 0 auto 33px;
+    &-wrapper {
+      width: 300px;
+      margin: 0 auto;
+    }
+    &-item {
+      margin: 0 auto 28px;
+      float: none;
+      &:last-child {
+        margin-right: auto;
+      }
+    }
+    &__btn {
+      width: 280px;
+      margin: 0 auto 32px;
+    }
+  }
+
+  .ideas {
+    width: 300px;
+    margin: 0 auto 24px;
+  }
+
+  .grid {
+    margin-top: 0;
+    &-item {
+      height: 120px;
+      width: 300px;
+      margin-bottom: 10px;
+      &--width2 {
+        width: 300px;
+      }
+    }
+  }
+
+  .search {
+    margin: 0 auto 40px;
+    &__text {
+      margin: 0 0 12px;
+    }
+    &__input {
+      width: 280px;
+    }
+    &__btn {
+      width: 280px;
+    }
+  }
+
+  .footer-wrapper {
+    width: inherit;
+  }
+
+  .footer-title {
+    margin: 11px 0 0 0;
+    float: none;
+    &--partners {
+      margin: 9px 0 0 0;
+      display: block;
+      float: none;
+      color: #333;
+      font: bold 14px "Montserrat";
+    }
+  }
+
+  .footer-nav {
+    width: 211px;
+    margin: 0 auto;
+    float: none;
+  }
+  .footer__logo {
+    height: initial;
+    margin: 16px auto 0;
+    float: none;
+  }
+
+  .footer-copy {
+    margin: 13px 0 18px 0;
+    float: none;
+    &__design {
+      margin: 0 auto;
+    }
+  }
+
+}
+

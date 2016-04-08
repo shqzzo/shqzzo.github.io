@@ -499,7 +499,7 @@ li {
   color: white;
   font: 14px/40px "Montserrat";
   text-align: center;
-  behavior: url(border-radius.htc);
+  behavior: url(../../border-radius.htc);
 }
 
 .header-top {
@@ -540,7 +540,7 @@ li {
   border-radius: 18px;
   box-sizing: border-box;
   text-align: center;
-  behavior: url(border-radius.htc);
+  behavior: url(../../border-radius.htc);
 }
 
 /* jCarousel */
@@ -565,7 +565,7 @@ li {
   float: left;
   border-radius: 4px;
   overflow: hidden;
-  behavior: url(border-radius.htc);
+  behavior: url(../../border-radius.htc);
 }
 
 .jcarousel:last-child {
@@ -593,7 +593,7 @@ li {
   box-sizing: border-box;
   color: #fff;
   background-position: center;
-  behavior: url(border-radius.htc);
+  behavior: url(../../border-radius.htc);
 }
 
 .step1 {
@@ -662,7 +662,7 @@ li {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   text-align: center;
-  behavior: url(border-radius.htc);
+  behavior: url(../../border-radius.htc);
 }
 
 .info__title {
@@ -707,7 +707,7 @@ li {
   border-radius: 50%;
   display: inline-block;
   background-color: #1a1915;
-  behavior: url(border-radius.htc);
+  behavior: url(../../border-radius.htc);
 }
 
 .partners-item__bg-icon {
@@ -720,7 +720,7 @@ li {
   border: solid 4px #fff;
   border-radius: 50%;
   box-sizing: border-box;
-  behavior: url(border-radius.htc);
+  behavior: url(../../border-radius.htc);
 }
 
 .partners-item__icon {
@@ -755,7 +755,7 @@ li {
   color: #ff4e50;
   font: bold 14px/36px "Montserrat";
   text-align: center;
-  behavior: url(border-radius.htc);
+  behavior: url(../../border-radius.htc);
 }
 
 .red {
@@ -811,7 +811,7 @@ li {
   color: #fff;
   font: bold 22px "Montserrat";
   text-align: center;
-  behavior: url(border-radius.htc);
+  behavior: url(../../../../border-radius.htc);
 }
 
 .grid-item--width2 {
@@ -855,7 +855,7 @@ li {
   box-sizing: border-box;
   box-shadow: 0 1px #eee;
   font: 14px "Roboto";
-  behavior: url(border-radius.htc);
+  behavior: url(../../border-radius.htc);
 }
 
 .search__btn {
@@ -867,7 +867,7 @@ li {
   background-color: #ff4e50;
   color: #fff;
   font: bold 14px "Montserrat";
-  behavior: url(border-radius.htc);
+  behavior: url(../../border-radius.htc);
 }
 
 /* Footer */

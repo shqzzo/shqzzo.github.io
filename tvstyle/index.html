@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TVStyle</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container clearfix">
+      <h1 class="header__logo"><a class="header__logo--link" href="#">tvstyle</a></h1>
+      <nav class="navigation">
+        <ul class="nav">
+          <li class="nav__item active">
+            <a class="nav__link" href="#">Пользователи<span class="badge">84</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Луки<span class="badge">42</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Стилисты<span class="badge">42</span></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-block">
+      <div class="dropdown">
+        <button class="user-block__dropdown btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+          Yuliana Nemysskaya
+          <span class="user-block__caret caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </header>
+  <section class="filters">
+    <div class="container">
+      <h3 class="filters__headline">Пользователи</h3>
+      <form role="form">
+        <input type="checkbox" title="checkbox">
+        <div class="form-group">
+          <input class="filters__date" type="date" name="calendar" title="date" value="2016-12-01"
+                 max="2016-12-31" min="2016-01-01">
+        <span>&mdash;</span>
+        <input class="filters__date" type="date" name="calendar" title="date" value="2016-12-01"
+               max="2016-12-31" min="2016-01-01">
+        </div>
+        <div class="dropdown-user dropdown">
+          <button class="filters__dropdown btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+            Пользователь
+            <span class="filters__caret caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пользователь 1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пользователь 2</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пользователь 3</a></li>
+          </ul>
+        </div>
+        <div class="dropdown-status dropdown">
+          <button class="filters__dropdown btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+            Не подтверждены
+            <span class="filters__caret caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Не подтверждены 1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Не подтверждены 2</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Не подтверждены 3</a></li>
+          </ul>
+        </div>
+        <input class="filters__name" type="text" title="name">
+        <input class="filters__btn btn btn-success" type="submit" value="Применить">
+      </form>
+    </div>
+  </section>
+  <section class="list">
+    <div class="container panel">
+      <table class="table ">
+        <thead>
+        <tr class="active">
+          <th>№</th>
+          <th>Как зовут</th>
+          <th>Роль</th>
+          <th>Электронка</th>
+          <th>Ссылка</th>
+          <th>Комментарии</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1</td>
+          <td><img class="table__avatar" src="img/oval-2.png" width="27" height="27" alt="Tammy McDonald">Tammy McDonald</td>
+          <td>Пользователь</td>
+          <td>dgutierrez@tanoodle.gov</td>
+          <td>blog.platphorma.com</td>
+          <td>Это очень крутая тетка...</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><img class="table__avatar" src="img/oval-3.png" width="27" height="27" alt="Debra Garrett">Debra Garrett</td>
+          <td>Стилист</td>
+          <td>jsmitha@ibox.biz</td>
+          <td>blog.platphorma.com</td>
+          <td>Эта невменяемая</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><img class="table__avatar" src="img/oval-4.png" width="27" height="27" alt="Debra Cole">Debra Cole</td>
+          <td>Стилист</td>
+          <td>rturner@trunyx.biz</td>
+          <td>blog.platphorma.com</td>
+          <td>У этой классные луки</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="pagination-box">
+    <div class="container text-center">
+      <ul class="pagination">
+        <li><a href="#">&laquo;</a></li>
+        <li><a href="#">1</a></li>
+        <li class="active"><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+      </ul>
+    </div>
+  </section>
+
+<!--JavaScript-->
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>

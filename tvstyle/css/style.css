@@ -278,3 +278,12 @@ a:hover, a:focus {
 .table {
   margin-bottom: 0;
 }
+
+/*DataTables Styles*/
+
+div.dataTables_wrapper div.dataTables_paginate {
+  text-align: center;
+}
+
+
+

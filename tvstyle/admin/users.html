@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TVStyle</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles_users.css">
+</head>
+<body>
+  <header class="b-header">
+    <div class="b-container clearfix">
+      <h1 class="b-header__logo"><a class="b-header__logo--link" href="#">tvstyle</a></h1>
+      <nav class="b-navigation">
+        <ul class="b-nav">
+          <li class="b-nav__item b-active">
+            <a class="b-nav__link" href="#">Пользователи<span class="badge">84</span></a>
+          </li>
+          <li class="b-nav__item">
+            <a class="b-nav__link" href="#">Луки<span class="badge">42</span></a>
+          </li>
+          <li class="b-nav__item">
+            <a class="b-nav__link" href="#">Стилисты<span class="badge">42</span></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="b-user-block">
+      <div class="dropdown">
+        <button class="b-user-block__dropdown btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+          Yuliana Nemysskaya
+          <span class="b-user-block__caret caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </header>
+  <!--TABLE WITH FILTERS-->
+  <section class="b-table">
+    <div class="b-container panel">
+      <div class="b-filters">
+        <h3 class="b-filters__headline">Пользователи</h3>
+        <form role="form">
+          <input type="checkbox" title="checkbox">
+          <div class="b-form-group">
+            <input class="b-filters__date" type="date" name="calendar" title="date" value="2016-12-01"
+                   max="2016-12-31" min="2016-01-01">
+            <span>&mdash;</span>
+            <input class="b-filters__date" type="date" name="calendar" title="date" value="2016-12-01"
+                   max="2016-12-31" min="2016-01-01">
+          </div>
+          <div class="b-dropdown-user dropdown">
+            <button class="b-filters__dropdown btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+              Пользователь
+              <span class="b-filters__caret caret"></span>
+            </button>
+            <ul class="dropdown-menu" id="testSelect" role="menu" aria-labelledby="dropdownMenu1"></ul>
+          </div>
+          <div class="b-dropdown-status dropdown">
+            <button class="b-filters__dropdown btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+              Не подтверждены
+              <span class="b-filters__caret caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Не подтверждены 1</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Не подтверждены 2</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Не подтверждены 3</a></li>
+            </ul>
+          </div>
+          <input class="b-filters__name" type="text" title="name">
+          <input class="b-filters__btn btn btn-success" type="submit" value="Применить">
+        </form>
+      </div>
+      <table class="table" id="myTable">
+        <thead>
+        <tr class="active">
+          <th>№</th>
+          <th>Как зовут</th>
+          <th>Роль</th>
+          <th>Электронка</th>
+          <th>Ссылка</th>
+          <th>Комментарии</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1</td>
+          <td><img class="b-table__avatar" src="img/oval-2.png" width="27" height="27" alt="Tammy McDonald">Tammy McDonald</td>
+          <td>Пользователь</td>
+          <td>dgutierrez@tanoodle.gov</td>
+          <td>blog.platphorma.com</td>
+          <td>Это очень крутая тетка...</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><img class="b-table__avatar" src="img/oval-3.png" width="27" height="27" alt="Debra Garrett">Debra Garrett</td>
+          <td>Стилист</td>
+          <td>jsmitha@ibox.biz</td>
+          <td>blog.platphorma.com</td>
+          <td>Эта невменяемая</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><img class="b-table__avatar" src="img/oval-4.png" width="27" height="27" alt="Debra Cole">Debra Cole</td>
+          <td>Стилист</td>
+          <td>rturner@trunyx.biz</td>
+          <td>blog.platphorma.com</td>
+          <td>У этой классные луки</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><img class="b-table__avatar" src="img/oval-2.png" width="27" height="27" alt="Tammy McDonald">Tammy McDonald</td>
+          <td>Пользователь</td>
+          <td>dgutierrez@tanoodle.gov</td>
+          <td>blog.platphorma.com</td>
+          <td>Это очень крутая тетка...</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><img class="b-table__avatar" src="img/oval-3.png" width="27" height="27" alt="Debra Garrett">Debra Garrett</td>
+          <td>Стилист</td>
+          <td>jsmitha@ibox.biz</td>
+          <td>blog.platphorma.com</td>
+          <td>Эта невменяемая</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><img class="b-table__avatar" src="img/oval-4.png" width="27" height="27" alt="Debra Cole">Debra Cole</td>
+          <td>Стилист</td>
+          <td>rturner@trunyx.biz</td>
+          <td>blog.platphorma.com</td>
+          <td>У этой классные луки</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><img class="b-table__avatar" src="img/oval-2.png" width="27" height="27" alt="Tammy McDonald">Tammy McDonald</td>
+          <td>Пользователь</td>
+          <td>dgutierrez@tanoodle.gov</td>
+          <td>blog.platphorma.com</td>
+          <td>Это очень крутая тетка...</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><img class="b-table__avatar" src="img/oval-3.png" width="27" height="27" alt="Debra Garrett">Debra Garrett</td>
+          <td>Стилист</td>
+          <td>jsmitha@ibox.biz</td>
+          <td>blog.platphorma.com</td>
+          <td>Эта невменяемая</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><img class="b-table__avatar" src="img/oval-4.png" width="27" height="27" alt="Debra Cole">Debra Cole</td>
+          <td>Стилист</td>
+          <td>rturner@trunyx.biz</td>
+          <td>blog.platphorma.com</td>
+          <td>У этой классные луки</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><img class="b-table__avatar" src="img/oval-2.png" width="27" height="27" alt="Tammy McDonald">Tammy McDonald</td>
+          <td>Пользователь</td>
+          <td>dgutierrez@tanoodle.gov</td>
+          <td>blog.platphorma.com</td>
+          <td>Это очень крутая тетка...</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><img class="b-table__avatar" src="img/oval-3.png" width="27" height="27" alt="Debra Garrett">Debra Garrett</td>
+          <td>Стилист</td>
+          <td>jsmitha@ibox.biz</td>
+          <td>blog.platphorma.com</td>
+          <td>Эта невменяемая</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><img class="b-table__avatar" src="img/oval-4.png" width="27" height="27" alt="Debra Cole">Debra Cole</td>
+          <td>Стилист</td>
+          <td>rturner@trunyx.biz</td>
+          <td>blog.platphorma.com</td>
+          <td>У этой классные луки</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><img class="b-table__avatar" src="img/oval-2.png" width="27" height="27" alt="Tammy McDonald">Tammy McDonald</td>
+          <td>Пользователь</td>
+          <td>dgutierrez@tanoodle.gov</td>
+          <td>blog.platphorma.com</td>
+          <td>Это очень крутая тетка...</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><img class="b-table__avatar" src="img/oval-3.png" width="27" height="27" alt="Debra Garrett">Debra Garrett</td>
+          <td>Стилист</td>
+          <td>jsmitha@ibox.biz</td>
+          <td>blog.platphorma.com</td>
+          <td>Эта невменяемая</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><img class="b-table__avatar" src="img/oval-4.png" width="27" height="27" alt="Debra Cole">Debra Cole</td>
+          <td>Стилист</td>
+          <td>rturner@trunyx.biz</td>
+          <td>blog.platphorma.com</td>
+          <td>У этой классные луки</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><img class="b-table__avatar" src="img/oval-2.png" width="27" height="27" alt="Tammy McDonald">Tammy McDonald</td>
+          <td>Пользователь</td>
+          <td>dgutierrez@tanoodle.gov</td>
+          <td>blog.platphorma.com</td>
+          <td>Это очень крутая тетка...</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><img class="b-table__avatar" src="img/oval-3.png" width="27" height="27" alt="Debra Garrett">Debra Garrett</td>
+          <td>Стилист</td>
+          <td>jsmitha@ibox.biz</td>
+          <td>blog.platphorma.com</td>
+          <td>Эта невменяемая</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><img class="b-table__avatar" src="img/oval-4.png" width="27" height="27" alt="Debra Cole">Debra Cole</td>
+          <td>Стилист</td>
+          <td>rturner@trunyx.biz</td>
+          <td>blog.platphorma.com</td>
+          <td>У этой классные луки</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><img class="b-table__avatar" src="img/oval-2.png" width="27" height="27" alt="Tammy McDonald">Tammy McDonald</td>
+          <td>Пользователь</td>
+          <td>dgutierrez@tanoodle.gov</td>
+          <td>blog.platphorma.com</td>
+          <td>Это очень крутая тетка...</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><img class="b-table__avatar" src="img/oval-3.png" width="27" height="27" alt="Debra Garrett">Debra Garrett</td>
+          <td>Стилист</td>
+          <td>jsmitha@ibox.biz</td>
+          <td>blog.platphorma.com</td>
+          <td>Эта невменяемая</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><img class="b-table__avatar" src="img/oval-4.png" width="27" height="27" alt="Debra Cole">Debra Cole</td>
+          <td>Стилист</td>
+          <td>rturner@trunyx.biz</td>
+          <td>blog.platphorma.com</td>
+          <td>У этой классные луки</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+<!--JavaScript-->
+  <script src="//code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script src="//cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

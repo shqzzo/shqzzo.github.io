@@ -1,0 +1,52 @@
+/*Bootstrap styles*/
+
+.badge {
+  margin-left: 5px;
+
+  background-color: #e1011c;
+}
+
+a:hover,
+a:active,
+a:focus,
+a:visited {
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+
+.nav>li>a {
+  padding: 0;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+  background-color: transparent;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: none;
+}
+
+.form-inline {
+  position: relative;
+}
+
+.btn {
+  padding: 0;
+}
+
+.table>thead>tr>th,
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>td,
+.table>tfoot>tr>td {
+  vertical-align: baseline;
+}
+
+.table {
+  margin-bottom: 0;
+}

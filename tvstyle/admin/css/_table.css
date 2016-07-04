@@ -1,0 +1,13 @@
+.b-table {
+  margin: 0 0 30px;
+}
+
+.b-table__avatar {
+  margin: 0 8px 0 0;
+}
+
+/*DataTables Styles*/
+
+div.dataTables_wrapper div.dataTables_paginate {
+  text-align: center;
+}

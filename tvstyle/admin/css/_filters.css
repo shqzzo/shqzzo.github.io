@@ -13,6 +13,7 @@
 .b-form-group {
   margin: 0 20px;
   display: inline-block;
+  position: relative;
   vertical-align: middle;
 }
 
@@ -27,13 +28,13 @@
   font: 400 12px/14px "Open Sans", sans-serif;
 }
 
-.b-filters__date::before {
+.b-form-group::before {
   height: 17px;
   width: 50px;
 
   position: absolute;
   top: -20px;
-  left: 38px;
+  left: 0;
 
   content: "По дате";
   color: #999;

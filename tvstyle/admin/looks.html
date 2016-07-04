@@ -8,104 +8,104 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="//cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles_users.css">
+  <link rel="stylesheet" href="css/styles_test.css">
 </head>
 <body>
-<header class="b-header">
-  <div class="b-container clearfix">
-    <h1 class="b-header__logo"><a class="b-header__logo--link" href="#">tvstyle</a></h1>
-    <nav class="b-navigation">
-      <ul class="b-nav">
-        <li class="b-nav__item b-active">
-          <a class="b-nav__link" href="#">Пользователи<span class="badge">84</span></a>
-        </li>
-        <li class="b-nav__item">
-          <a class="b-nav__link" href="#">Луки<span class="badge">42</span></a>
-        </li>
-        <li class="b-nav__item">
-          <a class="b-nav__link" href="#">Стилисты<span class="badge">42</span></a>
-        </li>
-      </ul>
-    </nav>
-    <div class="b-user-block">
-      <div class="dropdown">
-        <button class="b-user-block__dropdown btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-          Yuliana Nemysskaya
-          <span class="b-user-block__caret caret"></span>
-        </button>
-        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-          <li role="presentation" class="divider"></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+  <header class="b-header">
+    <div class="b-container clearfix">
+      <h1 class="b-header__logo"><a class="b-header__logo--link" href="#">tvstyle</a></h1>
+      <nav class="b-navigation">
+        <ul class="b-nav">
+          <li class="b-nav__item b-active">
+            <a class="b-nav__link" href="#">Пользователи<span class="badge">84</span></a>
+          </li>
+          <li class="b-nav__item">
+            <a class="b-nav__link" href="#">Луки<span class="badge">42</span></a>
+          </li>
+          <li class="b-nav__item">
+            <a class="b-nav__link" href="#">Стилисты<span class="badge">42</span></a>
+          </li>
         </ul>
+      </nav>
+      <div class="b-user-block">
+        <div class="dropdown">
+          <button class="b-user-block__dropdown btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+            Yuliana Nemysskaya
+            <span class="b-user-block__caret caret"></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</header>
-<!--TABLE WITH FILTERS-->
-<section class="b-table">
-  <div class="b-container panel">
-    <div class="b-filters">
-      <h3 class="b-filters__headline">Луки</h3>
-      <form role="form">
-        <input type="checkbox" title="checkbox">
-        <div class="b-form-group">
-          <input class="b-filters__date" type="date" name="calendar" title="date" value="2016-12-01"
-                 max="2016-12-31" min="2016-01-01">
-          <span>&mdash;</span>
-          <input class="b-filters__date" type="date" name="calendar" title="date" value="2016-12-01"
-                 max="2016-12-31" min="2016-01-01">
-        </div>
-        <input class="b-filters__btn btn btn-success" type="submit" value="Применить">
-      </form>
+  </header>
+  <!--TABLE WITH FILTERS-->
+  <section class="b-table">
+    <div class="b-container panel">
+      <div class="b-filters">
+        <h3 class="b-filters__headline">Луки</h3>
+        <form role="form">
+          <input type="checkbox" title="checkbox">
+          <div class="b-form-group">
+            <input class="b-filters__date" type="date" name="calendar" title="date" value="2016-12-01"
+                   max="2016-12-31" min="2016-01-01">
+            <span>&mdash;</span>
+            <input class="b-filters__date" type="date" name="calendar" title="date" value="2016-12-01"
+                   max="2016-12-31" min="2016-01-01">
+          </div>
+          <input class="b-filters__btn btn btn-success" type="submit" value="Применить">
+        </form>
+      </div>
+      <table class="table" id="myTable">
+        <thead>
+        <tr class="active">
+          <th>Категория</th>
+          <th>Лайки</th>
+          <th>Количество луков</th>
+          <th>Корзина по штукам</th>
+          <th>Корзина по вещам</th>
+          <th>Корзина по деньгам, грн.</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Передача 1</td>
+          <td>2332</td>
+          <td>50</td>
+          <td>22</td>
+          <td>100</td>
+          <td>2559.00 UAH</td>
+        </tr>
+        <tr>
+          <td>Передача 2</td>
+          <td>322</td>
+          <td>40</td>
+          <td>33</td>
+          <td>240</td>
+          <td>288483.00 UAH</td>
+        </tr>
+        <tr>
+          <td>Передача 3</td>
+          <td>3231</td>
+          <td>23</td>
+          <td>44</td>
+          <td>545</td>
+          <td>343242.99 UAH</td>
+        </tr>
+        </tbody>
+      </table>
     </div>
-    <table class="table" id="myTable">
-      <thead>
-      <tr class="active">
-        <th>Категория</th>
-        <th>Лайки</th>
-        <th>Количество луков</th>
-        <th>Корзина по штукам</th>
-        <th>Корзина по вещам</th>
-        <th>Корзина по деньгам, грн.</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>Передача 1</td>
-        <td>2332</td>
-        <td>50</td>
-        <td>22</td>
-        <td>100</td>
-        <td>2559.00 UAH</td>
-      </tr>
-      <tr>
-        <td>Передача 2</td>
-        <td>322</td>
-        <td>40</td>
-        <td>33</td>
-        <td>240</td>
-        <td>288483.00 UAH</td>
-      </tr>
-      <tr>
-        <td>Передача 3</td>
-        <td>3231</td>
-        <td>23</td>
-        <td>44</td>
-        <td>545</td>
-        <td>343242.99 UAH</td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-<!--JavaScript-->
-<script src="//code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-<script src="//cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
-<script src="js/script.js"></script>
+  </section>
+  <!--JavaScript-->
+  <script src="//code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script src="//cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

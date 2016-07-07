@@ -1,0 +1,123 @@
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.left {
+  width: 550px;
+  border: 1px solid lightseagreen;
+
+  float: left;
+}
+
+.b-dropzone {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  background-color: #ffffff;
+  /*border: solid 1px #e4e3e3;*/
+}
+
+.b-dropzone__item {
+  width: 220px;
+  height: 220px;
+  margin: 12px;
+  background-color: #f4f4f4;
+  border: solid 1px #e4e3e3;
+}
+
+.bag,
+.pants {
+  float: left
+}
+
+.pants {
+  transform: rotate(-20deg);
+}
+
+.cap,
+.shoes {
+  float: right;
+}
+
+.right {
+  width: 550px;
+  height: 170px;
+  border: 1px solid lightseagreen;
+
+  float: right;
+}
+
+.drop-active {
+  border-color: #aaa;
+}
+
+.drop-target {
+  background-color: #29e;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.drag-drop {
+  display: inline-block;
+  min-width: 40px;
+  padding: 2em 0.5em;
+
+  color: #fff;
+  background-color: #29e;
+  border: solid 2px #fff;
+
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+
+  transition: background-color 0.3s;
+}
+
+.drag-drop.can-drop {
+  color: #000;
+  background-color: #4e4;
+}
+
+
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: #CCC;
+  margin: 10px;
+  float: left;
+}
+
+.block {
+  position: relative;
+  -webkit-transition: -webkit-transform 0.18s ease;
+  transition: transform 0.18s ease;
+}
+.block.dragging {
+  z-index: 100;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.slot.highlight {
+  background-color: #d0e8f0;
+}
+.slot .block {
+  margin: 0;
+}
+
+.dropzone-1.highlight {
+  background-color: #d0e8f0;
+}
+
+.slot-container {
+  background-color: #E4F9F2;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}

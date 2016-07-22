@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  // initialize and setup facebook js sdk
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '263087560728949',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+
+    FB.getLoginStatus(function(response) {
+      if (response.status === 'connected') {
+        document.getElementById('status').innerHTML = 'We are connected.';
+      } else if (response.status === 'not_authorized') {
+        document.getElementById('status').innerHTML = 'We are not logged in.'
+      } else {
+        document.getElementById('status').innerHTML = 'You are not logged into Facebook.';
+      }
+    });
+  };
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  // login with facebook with extra permissions
+  function login() {
+    FB.login(function(response) {
+      if (response.status === 'connected') {
+        document.getElementById('status').innerHTML = 'We are connected.';
+      } else if (response.status === 'not_authorized') {
+        document.getElementById('status').innerHTML = 'We are not logged in.'
+      } else {
+        document.getElementById('status').innerHTML = 'You are not logged into Facebook.';
+      }
+    }, {scope: 'email'});
+  }
+
+  // getting basic user info
+  function getInfo() {
+    FB.api('/me', 'GET', {fields: 'first_name,last_name,name,email,id'}, function(response) {
+      document.getElementById('first_name').innerHTML = response.first_name;
+      document.getElementById('last_name').innerHTML = response.last_name;
+      document.getElementById('full_name').innerHTML = response.name;
+      document.getElementById('email').innerHTML = response.email;
+      document.getElementById('id').innerHTML = response.id;
+    });
+  }
+</script>
+
+<div class="wrapper">
+  <a onclick="login()" href="#" class="icon-facebook"></a>
+  <a onclick="getInfo()" href="#" id="get-info">Get info</a>
+  <table>
+    <tr>
+      <td>Status:</td>
+      <td id="status"></td>
+    </tr>
+    <tr>
+      <td>First Name:</td>
+      <td id="first_name"></td>
+    </tr>
+    <tr>
+      <td>Last Name:</td>
+      <td id="last_name"></td>
+    </tr>
+    <tr>
+      <td>Full Name:</td>
+      <td id="full_name"></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td id="email"></td>
+    </tr>
+    <tr>
+      <td>ID:</td>
+      <td id="id"></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
+</body>
+</html>

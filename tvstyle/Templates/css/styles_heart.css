@@ -74,12 +74,6 @@
   position: absolute;
   z-index: 5;
   transform: matrix(1, 0, 0, 1, 0, 0);
-  border: 1px dashed #ccc;
-  background-color: #eee;
-  opacity: .5;
-}
-.template-hearts .item-2:hover {
-  background-color: #ab4444;
 }
 .template-hearts .item-3 {
   width: 110px;
@@ -104,12 +98,6 @@
   position: absolute;
   z-index: 7;
   transform: matrix(1, 0, 0, 1, 0, 0);
-  border: 1px dashed #ccc;
-  background-color: #eee;
-  opacity: .5;
-}
-.template-hearts .item-4:hover {
-  background-color: #ab4444;
 }
 .template-hearts .item-5 {
   width: 237px;
@@ -125,4 +113,65 @@
 }
 .template-hearts .item-5:hover {
   background-color: #ab4444;
+}
+.hover-in {
+  transition: 0.3s ease-out;
+}
+.hover-out {
+  transition: 0.3s ease-in;
+}
+.movie {
+  margin: 0 auto;
+  width: 250px;
+}
+.movie-list:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.movie__card {
+  position: relative;
+  width: 250px;
+  height: 228px;
+}
+.movie__card.hover-in {
+  transition: 0.3s ease-out;
+}
+.movie__card.hover-out {
+  transition: 0.3s ease-in;
+}
+.movie [class*="layer"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+}
+.movie .layer-1 {
+  opacity: .5;
+  border: 1px dashed #ccc;
+  background-color: #eee;
+}
+.movie .layer-2 {
+  background-image: url(../img/IN002EWJCB06_1_v2.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+  -webkit-transform: translateZ(30px);
+  transform: translateZ(30px);
+}
+.movie .shine {
+  border-radius: 10px;
+}
+.template-hearts .item-2 {
+  opacity: 1;
+}
+.movie .layer-22 {
+  background-image: url(../img/LA055EWHIE29_1_v1.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+  -webkit-transform: translateZ(30px);
+  transform: translateZ(30px);
 }
